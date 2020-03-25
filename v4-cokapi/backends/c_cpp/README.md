@@ -28,18 +28,10 @@ Build dependencies:
 ---
 To install:
 
-First grab the basic build dependencies:
+Make the docker container with
 
-sudo apt-get install \
-build-essential git git-core libssl-dev \
-autotools-dev \
-automake \
-libc6-dbg
+'make all'
 
-then run:
+Then run
 
-./auto-everything.sh
-
-now to make a docker container, run
-
-'make docker'
+'make test'

@@ -1,8 +1,7 @@
 # Docker-specific targets
 
 # build a docker container
-all:
-	./auto-everything.sh # build everything first HERE outside the container (yeah, #leaky #abstraction)
+all:	
 	docker build -t="pgbovine/opt-cpp-backend:v1" .
 
 test:
